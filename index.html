@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Interactive card details form</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="pic">
+        <div class="card">
+          <div class="card-back">
+            <div class="backcard cvv">000</div>
+            <img src="./images/bg-card-back.png" alt="" />
+          </div>
+          <div class="card-front">
+            <div class="frontcard number">0000 0000 0000 0000</div>
+            <div class="frontcard name">Jane Appleseed</div>
+            <div class="frontcard date">00/00</div>
+            <img class="frontcard logo" src="./images/card-logo.svg" alt="" />
+            <img src="./images/bg-card-front.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="main">
+        <form action="">
+          <label for="">cardholder name</label>
+          <input type="text" placeholder="e.g. Jane Appleseed" />
+          <label for="">Card Number</label>
+          <input type="text" placeholder="e.g. 1234 5678 9123 0000" />
+          <div class="grid-content">
+            <label id="label-date" for="">Exp. Date (MM/YY)</label>
+            <input id="input-date-m" type="text" placeholder="MM" />
+            <input id="input-date-y" type="text" placeholder="YY" />
+            <label id="label-cvc" for="">CVC</label>
+            <input id="input-cvc" type="text" placeholder="e.g. 123" />
+          </div>
+
+          <input type="submit" value="Confirm" />
+        </form>
+      </div>
+    </div>
+    <!-- 
+    Thank you! We've added your card details Continue -->
+  </body>
+</html>
